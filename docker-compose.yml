@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  curso:
+    container_name: curso
+    build: .
+    command: bash -c "bash"
+    volumes:
+      - .:/curso
+    ports:
+      - "8000:8000"
+    tty: true 
